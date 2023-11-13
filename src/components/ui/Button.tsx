@@ -1,5 +1,5 @@
 import { cn } from "../../lib/utils";
-import { VariantProps,cva } from 'class-variance-authority';
+import { VariantProps, cva } from "class-variance-authority";
 import { HTMLAttributes, ReactNode } from "react";
 
 const buttonVariants = cva(
@@ -35,7 +35,6 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, VariantProps<ty
   children: ReactNode;
   isLoading?: boolean;
   type?: "submit" | "button" | "reset";
-  
 }
 
 const Button = ({ type, variant, size, fullWidth, isLoading, className, children, ...props }: ButtonProps) => {
